@@ -1,0 +1,929 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Rajdhani, sans-serif;
+}
+:root{
+    --color-one:#ff1146;
+    --color-two:rgb(57, 57, 57);
+}
+.errorsAll{
+    color: #ff1146;
+    margin: auto;
+}
+
+/* Начала стилизации шапки */
+
+header {
+
+    display: flex;
+    flex-direction: row;
+
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    z-index: 20;
+    background: linear-gradient(0deg,rgb(0, 0, 0, 0) 0%, rgb(0, 0, 0, 0.5) 25%, rgb(0, 0, 1) 100%);
+}
+
+header a:hover{
+    color: var(--color-one);
+    transition: 0.5s;
+}
+.noLog{
+    color:white;
+    transition: 0.5s;
+    position: relative;
+    left: 65%;
+    height: 100%;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+.LinkLogo {
+    position: relative;
+    left: 15%;
+    height: 120px;
+    width: 200px;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.Log a{
+    color: white;
+    text-decoration: none;
+
+}
+.Log{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 15%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left: 65%;
+    color: white;
+}
+.profileLog{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    color: white;
+    transition: 0.1s;
+}
+.profileLog img{
+    
+
+    text-decoration: none;
+    color: white;
+    border:2px solid red;
+    border-radius: 70px;
+    background: rgb(255, 255, 255, 0.8);
+    width: 70px;
+    height: 70px;
+}
+
+
+/* Конес стилизации шапки */
+
+/* Задник для главной */
+
+.GL {
+    background: url("../img/BackGL.jpg") no-repeat;
+    width: 100%;
+    height: 60vh;
+    padding-top: 10%;
+    background-size: cover;
+    border-bottom: 3px solid var(--color-one);
+}
+
+.GLcontent {
+
+    width: 100%;
+    display: block;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.GLcontent h1 {
+    font-size: 45px;
+    margin-bottom: 5%;
+
+}
+
+/* Конец стилизации задника для главной */
+
+
+/* Начало подвала */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    bottom: 0;
+    position: relative;
+    border-top:2px solid var(--color-one);
+    background-color: black;
+    width: 100%;
+    color: white;
+    font-size: 60%;
+    align-items: center;
+}
+footer h2{
+    width: 30%;
+    
+}
+.PicL{
+    width: 5%;
+    /*
+    margin-left: 47.5%;
+    margin-right: 457.5; */
+
+}
+
+/* Конец подвала */
+
+/* Стиль страниц index */
+
+.postIndex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.menuPost{
+    display: block;
+    padding: 5%;
+    width: 20%;
+    
+}
+.blockMenuPost{
+    background: white;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    align-items: center;
+    height: 300px;
+    width: 250px;
+    border-radius:20px;
+    justify-content: center;
+
+}
+.blockMenuPost a{
+    height: 50px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    transition: 0.1s;
+}
+.blockMenuPost h2{
+    width: 90%;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 1px solid silver;
+    padding: 5px;
+}
+.blockMenuPost a:hover{
+    background:linear-gradient(to right, rgba(255, 0, 0, 0.1), red,rgba(255, 0, 0, 0.1));
+    transition: 0.1s;
+    color: white;
+}
+
+.contentPost{
+    overflow-y:auto;
+    scroll-margin: 5px;
+    display: flex;
+    padding: 5%;
+    gap:25px;
+    width: 70%;
+    height: 30%;
+    flex-direction: column;
+    border-left: 3px solid silver;
+}
+.contentPost h1{
+    font-size: 30px;
+    margin-left: 25%;
+    color:rgb(57, 57, 57);
+}
+.postStates{
+    display: flex;
+    gap:5%;
+    width: 80%;
+    height: 300px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    background: white;
+    padding: 2%;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    
+}   
+.blockLowStates img{
+width: 30%;
+height: 100%;
+border-radius: 10px;
+}
+
+.blockLowStates{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap:5%;
+}
+.textStates{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: space-between;
+    
+}
+.textStates button{
+    display: Var(--color-one);
+    width: 20%;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background: var(--color-one);
+    height: 40px;
+
+
+}
+.hertPng{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    border: 2px solid var(--color-one);
+    background: whitesmoke;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 40px;
+}
+.hertPng input{
+    background: none;
+    border: none;
+    width: 60%;
+    height: 100%;
+    font-size: 15px;
+}
+.PostButton{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    height: 40px;
+    width: 100%;
+    flex-direction: row;
+    
+}
+.hertPng img{
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    
+}
+/* Стиль конец страниц index */
+
+/* Стиль для авторизации начало */
+
+.backAuto{
+    background-image: url("../img/backgroundAuto.png");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.autoRez{
+    display: flex;
+    color:rgb(57, 57, 57);
+    flex-direction: column;
+    width:30%;
+    height: 390px;
+    background: rgb(255, 255, 255, 0.8);
+    box-shadow: 0px 5px 10px 0px rgba(255, 0, 0, 0.5);
+    gap: 15px;
+    padding: 15px;
+    border-radius: 25px;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
+.autoRez h1{
+    margin: auto;
+    font-size: 35px;
+}
+.autoRez h2{
+    margin-left: 5%;
+    font-size: 20px;
+}
+.autoRez input{
+    border-radius: 10px;
+    border: 1px solid var(--color-one);
+    padding: 5px;
+    width: 90%;
+    height: 30px;
+    margin: auto;
+    color:rgb(57, 57, 57);
+    outline: none;
+}
+.autoRez button{
+    position: relative;
+    left: 35%;
+    width: 30%;
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: var(--color-one);
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+.autoRez a{
+    margin-bottom: 20px;
+    color:rgb(57, 57, 57);
+    position: relative;
+    left: 12.5%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3;
+}
+.autoRez a:hover{
+    transition: 0.3;
+    color: var(--color-one);
+}
+.autoRez p{
+    color: var(--color-one);
+    margin: auto;
+}
+/* Стиль для авторизации конец */
+
+/* Начало стилей регистрации */
+
+.backReg{
+    background-image: url("../img/backgroundReg.png");
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.regProf{
+    display: flex;
+    color:rgb(57, 57, 57);
+    flex-direction: column;
+    width:30%;
+    height: 70%;
+    background: rgb(255, 255, 255, 0.8);
+    box-shadow: 0px 5px 10px 0px rgba(255, 0, 0, 0.5);
+    gap: 15px;
+    padding: 15px;
+    border-radius: 25px;
+    position: absolute;
+    top: 17%;
+    left: 35%;
+}
+.regProf h1{
+    margin: auto;
+    font-size: 35px;
+}
+.regProf h2{
+    margin-left: 5%;
+    font-size: 20px;
+}
+.regProf input{
+    border-radius: 10px;
+    border: 1px solid var(--color-one);
+    padding: 5px;
+    width: 90%;
+    height: 30px;
+    margin: auto;
+    color:rgb(57, 57, 57);
+    outline: none;
+}
+.regProf button{
+    position: relative;
+    left: 35%;
+    width: 30%;
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: var(--color-one);
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+.regProf p{
+    color: var(--color-one);
+    margin: auto;
+}
+.regProf a{
+    margin-bottom: 20px;
+    color:rgb(57, 57, 57);
+    position: relative;
+    left: 12.5%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3;
+}
+.regProf a:hover{
+    transition: 0.3;
+    color: var(--color-one);
+}
+
+/* Конец стилей регистрации */
+
+/* Начало стиля карты профиля */
+
+.backProf{
+    background-image: url("../img/backgroundprofile.png");
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.profilCard{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid var(--color-two);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    position: relative;
+    top:20%;
+    left: 20%;
+    width: 60%;
+    height: 75%;
+    padding-bottom: 10px;
+    align-items: center;
+    border-radius: 20px;
+
+}
+.imgCard{
+    width: 20%;
+    top:0;
+    position: relative;
+
+}
+.profilNameAndAll{
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    justify-content: space-between;
+}
+.profilNameAndAll img{
+    width: 150px;
+    border-radius: 100px;
+    height: 150px;
+    border: 2px solid var(--color-one);
+}
+
+.profileInfo{
+    display: flex;
+    gap: 10px;
+    width: 70%;
+    height: 20%;
+    flex-direction: column;
+}
+.profileInfo .name{
+    font-size: 35px;
+    color: var(--color-two);
+    border-bottom: 2px solid var(--color-one);
+}
+.profilMenu{
+    flex-direction: column;
+    display: flex;
+    gap: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.progressBar{
+    width: 100%;
+    border-radius: 20px;
+    background: white;
+    border: 2px solid var(--color-two);
+    height: 20px;
+}
+.progress{
+    height: 20px;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(255,0,0,0.5), red,rgb(255,0,0,0.7),red,rgb(255,0,0,0.7));
+}
+.profilNameAndAll h2{
+    color: var(--color-two);
+}
+.profilMenu{
+    border-top: 5px solid var(--color-two);
+
+    width: 80%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.profilMenu h2{
+    color: white;
+    width: 30%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-two);
+    border-radius: 0px 0px 10px 10px;
+}
+.profilMenu a{
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-two);
+    transition: 0.5;
+}
+.profilMenu a:hover{
+    transition: 0.5;
+    color: var(--color-one);
+}
+/* Конец стиля карты профиля */
+
+/* Начала стиля карты добавления и просмотра статей */
+
+.backStates{
+    background-image: url("../img/backgroundprofile.png");
+    width: 100%;
+    height: 1500px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}
+.statesCard{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid var(--color-two);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    position: relative;
+    top:20%;
+    width: 70%;
+    height: 70%;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    align-items: center;
+    border-radius: 20px;
+    margin: auto;
+
+}
+.statesCard h1{
+    margin-left: 0%;
+}
+.formsSelect{
+    margin-top: 20px;
+    border-bottom:2px solid var(--color-two);
+    border-top: 2px solid var(--color-two);
+    width: 99%;
+    height: 450px;
+    flex-direction: column;
+    align-items: center;
+    display:flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+.formsSelect h2{
+    margin-top: 15px;
+}
+.formsSelect .nameAndDesc{
+    display: flex;
+    flex-direction: row;
+    height: 85%;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+}
+.formsSelect .nameAndDesc div{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 85%;
+    gap: 30px;
+}
+.formsSelect .nameAndDesc div input{
+    border: none;
+    font-size: 17px;
+    width: 100%;
+    height: 20%;
+    outline: none;
+}
+.formsSelect .nameAndDesc div textarea{
+    height: 20%;
+    resize: none;
+    outline: none;
+    width: 100%;
+    border: 2px solid var(--color-two);
+    border-radius: 15px;
+    height: 80%;
+    padding: 10px;
+}
+.formsSelect #file-input{
+    width: 27%;
+    margin-right: 7%;
+    height: 85%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+  
+.formsSelect #file-input #lableIn2{
+    width: 320px;
+    height: 320px;
+    cursor: pointer;
+    background-image: url("../img/Заглушка.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+.formsSelect #file-input #fileInpute {
+    display: none;
+}
+.formsSelect button{
+    width: 200px;
+    height: 70px;
+    color: white;
+    border: 2px solid whitesmoke;
+    background: var(--color-two);
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.2s;
+}
+.formsSelect button:hover{
+    background: var(--color-one);
+    transition: 0.2s;
+}
+
+.StatesSellectUsers{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-y:auto;
+    scroll-margin: 5px;
+    gap:5%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 100%;
+
+}
+.blockstates{
+    display: flex;
+    margin: auto;
+    width: 90%;
+    height: 300px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    background: white;
+    padding: 2%;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    
+}
+.blockstates .imgblockStates{
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+}
+.likesAndStates p img{
+    width: 25px;
+}
+.likesAndStates{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-two);
+    margin-top: 20px;
+}
+.blockSelInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.blockSelInfo .nameAndDesc{
+    width: 85%;
+    color: var(--color-two);
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+.blockSelInfo .nameAndDesc h1{
+    margin-left: 30%;
+    margin-bottom: 15px;
+}
+.blockSelInfo .nameAndDesc p{
+    margin-left: 10%;
+    font-size: 20px;
+}
+.blockstates button{
+    width: 170px;
+    height: 50px;
+    color: white;
+    border: 2px solid whitesmoke;
+    background: var(--color-two);
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.2s;
+    margin: auto;
+}
+.blockstates button:hover{
+    background: var(--color-one);
+    transition: 0.2s;
+}
+.warningStates{
+    margin: auto !important;
+}
+/* Конец стиля карты добавления и просмотра статей */
+
+/* Начало стиля странички с изменениями пользователя*/
+.backCardReject{
+    background-image: url("../img/backgroundprofile.png");
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.blockCardReject{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid var(--color-two);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    position: relative;
+    top:20%;
+    width: 50%;
+    height: 70vh;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    align-items: center;
+    border-radius: 20px;
+    margin: auto;
+    font-size: 17px;
+}
+.ProfilCardReject{
+    width: 100%;
+    height: 60%;
+    
+    justify-content: space-around;
+    align-items: center;  
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid var(--color-two);
+    color: var(--color-two);
+    padding: 15px;
+}
+.ProfilCardReject h1{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+.namesAndImg{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.imgProfileR input{
+    display: none;
+}
+.imgProfileR{
+    height: 100%;
+    width: 20%;
+}
+#lableIn{
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    border:2px solid red;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-image:url("../img/imgProfil/logoDefoltProfile.png");
+    display: block;
+    
+}
+.nameAndEmailRejct{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+}
+.nameAndEmailRejct label{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.nameAndEmailRejct label input{
+    border-radius: 10px;
+    border: 1px solid var(--color-one);
+    padding: 5px;
+    margin: auto;
+    color:rgb(57, 57, 57);
+    outline: none;
+    width: 270px;
+}
+.nameAndEmailRejct label p{
+    width: 150px;
+}
+.ProfilCardReject button{
+    height: 40px;
+    width: 150px;
+    background: var(--color-two);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    transition: 0.3;
+
+}
+.ProfilCardReject button:hover{
+    transition: 0.3;
+    color: white;
+    background: var(--color-one);
+}
+
+.PasswordCardReject{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 15px;
+    color: var(--color-two);
+}
+.PasswordCardReject label{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.PasswordCardReject label p{
+    width: 30%;
+    display: block;
+    margin-left:20px ;
+}
+.PasswordCardReject label input{
+    width: 55%;
+    border-radius: 10px;
+    border: 1px solid var(--color-one);
+    padding: 5px;
+    margin: auto;
+    color:rgb(57, 57, 57);
+    outline: none;
+}
+.PasswordCardReject button{
+    height: 40px;
+    width: 150px;
+    background: var(--color-two);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    transition: 0.3;
+}
+.PasswordCardReject button:hover{
+    transition: 0.3;
+    color: white;
+    background: var(--color-one);
+}
+.statusUsers{
+    border-radius: 20px;
+    border: 2px solid var(--color-one);
+    width: 80%;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Конец стиля странички с изменениями пользователя */
